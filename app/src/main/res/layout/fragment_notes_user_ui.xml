@@ -28,17 +28,18 @@
             android:layout_marginTop="30dp"
             android:text="@string/notes"
             />
+
         <TextView
             android:id="@+id/user_note_course_title"
-            android:layout_width="match_parent"
+            android:layout_width="346dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="67dp"
+            android:inputType="textMultiLine|textCapSentences"
+            android:text="Big Data Course"
             android:textColor="@color/white"
             android:textSize="19sp"
-            android:inputType="textCapSentences"
             android:textStyle="bold"
-            android:text="Big Data Course"
-            android:layout_marginTop="67dp"
-            android:layout_marginStart="25dp"
 
             />
 

@@ -64,9 +64,7 @@ public class notesAdminUI extends Fragment {
         noteEditText.setText("");
         DashBoardData.notesLists.add(newNote);
 
-         Toast.makeText(getContext(),DashBoardData.notesLists.toString() , Toast.LENGTH_SHORT).show();
-        //dashBoardData.noteArrayAdapter.addingItem(newNote);
-        dashBoardData.noteArrayAdapter.notifyDataSetChanged();
+           dashBoardData.noteArrayAdapter.notifyDataSetChanged();
          dashBoardData.setNoteDashboard(getBundleandId() , newNote);
 
 
@@ -90,7 +88,6 @@ public class notesAdminUI extends Fragment {
 
 
 
-        //noteArrayAdapter.notifyDataSetChanged();
 
 
         return view ;

@@ -28,13 +28,14 @@
             android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/requests_course_title"
-            android:layout_width="wrap_content"
+            android:layout_width="328dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="71dp"
-            android:inputType="textCapSentences"
+            android:inputType="textCapSentences|textMultiLine"
             android:text="@string/courses"
             android:textColor="@color/white"
             android:textSize="22sp"

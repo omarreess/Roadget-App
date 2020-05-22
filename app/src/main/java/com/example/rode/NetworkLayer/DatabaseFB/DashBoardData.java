@@ -59,11 +59,15 @@ public class DashBoardData {
                 notesLists= new ArrayList<>();
                 for (DataSnapshot childDataSnapshot :  dataSnapshot.getChildren()) {
                     notesLists.add(childDataSnapshot.getValue(String.class));
-                       noteArrayAdapter = new noteArrayAdapter(R.layout.item_note_matriel, DashBoardData.notesLists);
-                    recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-                    recyclerView.setItemAnimator(new DefaultItemAnimator());
-                    recyclerView.setAdapter(noteArrayAdapter);
+
                 }
+                if (notesLists==null)
+                {                notesLists= new ArrayList<>();
+                }
+                noteArrayAdapter = new noteArrayAdapter(R.layout.item_note_matriel, DashBoardData.notesLists);
+                recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+                recyclerView.setItemAnimator(new DefaultItemAnimator());
+                recyclerView.setAdapter(noteArrayAdapter);
                 progressBar.setVisibility(View.INVISIBLE);
 
                 myRef.removeEventListener((ValueEventListener) this);
@@ -119,11 +123,15 @@ public class DashBoardData {
 
                 for (DataSnapshot childDataSnapshot :  dataSnapshot.getChildren()) {
                     matrielLists.add(childDataSnapshot.getValue(String.class));
-                      matrielArrayAdapter = new matrielArrayAdapter(R.layout.item_note_matriel, DashBoardData.matrielLists);
-                    recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-                    recyclerView.setItemAnimator(new DefaultItemAnimator());
-                    recyclerView.setAdapter(matrielArrayAdapter);
+
                 }
+                if (notesLists==null)
+                {                notesLists= new ArrayList<>();
+                }
+                matrielArrayAdapter = new matrielArrayAdapter(R.layout.item_note_matriel, DashBoardData.matrielLists);
+                recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+                recyclerView.setItemAnimator(new DefaultItemAnimator());
+                recyclerView.setAdapter(matrielArrayAdapter);
                 progressBar.setVisibility(View.INVISIBLE);
                 myRef.removeEventListener((ValueEventListener) this);
 
