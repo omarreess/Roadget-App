@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.mycoursesAdminUI">
+
+    <FrameLayout
+        android:id="@+id/user_mycourse_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/admin_mycourse_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            android:text="@string/my_courses"
+            android:inputType="textCapSentences"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_mycourse_list"
+        android:layout_width="0dp"
+        android:layout_height="515dp"
+        android:scrollbars="vertical"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_mycourse_toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <FrameLayout
+
+        android:id="@+id/admin_mycourse_frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="13dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_mycourse_list"
+        app:layout_constraintVertical_bias="0.94">
+
+        <ImageView
+            android:id="@+id/admin_mycourse_addcourse_img"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/add_icon"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="TODO" />
+
+        <TextView
+            android:id="@+id/admin_mycourse_add_course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="67dp"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/blue"
+            android:text="@string/add_a_new_course"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/admin_mycourse_frame"
+        app:layout_constraintEnd_toEndOf="@+id/user_mycourse_list"
+        app:layout_constraintStart_toStartOf="@+id/user_mycourse_list"
+        app:layout_constraintTop_toTopOf="@+id/user_mycourse_toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "190690524062",
+    "firebase_url": "https://rode-3f149.firebaseio.com",
+    "project_id": "rode-3f149",
+    "storage_bucket": "rode-3f149.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190690524062:android:be2d0136b84ebd1d2a748f",
+        "android_client_info": {
+          "package_name": "com.example.rode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190690524062-pao2v4clghfhkkm73s4n4b6pnj881kl8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rode",
+            "certificate_hash": "d891e7d4e9baaa404167d015bfdd2a110317c4a5"
+          }
+        },
+        {
+          "client_id": "190690524062-h86024pmogrd6ne0vupgikg0rqv5pfgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoVDHZRMr0SjELDqGbU1W1jbHHMsal8u4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190690524062-h86024pmogrd6ne0vupgikg0rqv5pfgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

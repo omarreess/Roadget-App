@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.createCourseUI"
+     >
+
+    <FrameLayout
+        android:id="@+id/create_course_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@color/yellow"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/create_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            android:text="Add New Course "
+            android:textColor="@color/white_darker"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_course_toolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="18dp"
+            android:paddingTop="15dp"
+            android:paddingRight="18dp">
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:paddingLeft="6.10dp"
+                android:paddingTop="10dp"
+                android:inputType="textCapSentences"
+                android:text="Course Name"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toTopOf="@+id/create_course_name"
+                app:layout_constraintStart_toStartOf="@+id/create_course_name"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/create_course_name"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/white_darker"
+                android:ems="10"
+
+
+                android:paddingLeft="12dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textColorHint="@color/blue"
+                android:textSize="15sp"
+                android:inputType="textCapSentences"
+                app:layout_constraintBottom_toTopOf="@+id/textView10"
+                app:layout_constraintStart_toStartOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:paddingLeft="6.10dp"
+                android:paddingTop="10dp"
+                android:inputType="textCapSentences"
+                android:text="Course Place Name"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_place"
+                app:layout_constraintStart_toStartOf="@+id/create_course_place"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_name" />
+
+            <EditText
+                android:id="@+id/create_course_place"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/white_darker"
+                android:ems="10"
+                 android:paddingLeft="12dp"
+
+                android:inputType="textCapSentences"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textColorHint="@color/blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView11"
+                app:layout_constraintStart_toStartOf="@+id/textView11"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:paddingLeft="6.10dp"
+                android:inputType="textCapSentences"
+                android:paddingTop="10dp"
+                android:text="@string/course_description"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_descrption"
+                app:layout_constraintStart_toStartOf="@+id/create_course_descrption"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_place" />
+
+            <EditText
+                android:id="@+id/create_course_descrption"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+
+                 android:backgroundTint="@color/white_darker"
+                android:ems="10"
+                android:inputType="textMultiLine"
+
+                android:paddingLeft="12dp"
+
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textColorHint="@color/blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView16"
+                app:layout_constraintStart_toStartOf="@+id/textView16"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:backgroundTint="@color/white_darker"
+                android:paddingLeft="6.10dp"
+
+                android:paddingTop="10dp"
+                android:text="@string/address"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_address"
+                app:layout_constraintStart_toStartOf="@+id/create_course_address"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_price" />
+
+            <EditText
+                android:id="@+id/create_course_date"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/white_darker"
+                android:ems="10"
+                android:inputType="textCapSentences"
+
+                android:paddingLeft="12dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textColorHint="@color/blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView15"
+                app:layout_constraintStart_toStartOf="@+id/textView15"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:paddingLeft="6.10dp"
+                android:paddingTop="10dp"
+
+                android:text="Price"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_price"
+                app:layout_constraintStart_toStartOf="@+id/create_course_price"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_date" />
+
+            <EditText
+                android:id="@+id/create_course_price"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/white_darker"
+                android:ems="10"
+                android:paddingLeft="12dp"
+                 android:inputType="number"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textColorHint="@color/blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"
+                app:layout_constraintStart_toStartOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:paddingLeft="6.10dp"
+                android:paddingTop="10dp"
+                android:inputType="textCapSentences"
+                android:text="Date"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_date"
+                app:layout_constraintStart_toStartOf="@+id/create_course_date"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_descrption" />
+
+            <EditText
+                android:id="@+id/create_course_address"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/white_darker"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+
+
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textColorHint="@color/blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                app:layout_constraintStart_toStartOf="@+id/textView17"
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:paddingLeft="12dp"
+                android:inputType="textCapSentences"
+                android:paddingTop="10dp"
+                android:text="@string/instructor"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_instructor"
+                app:layout_constraintStart_toStartOf="@+id/create_course_instructor"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_address" />
+
+            <EditText
+                android:id="@+id/create_course_instructor"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/white_darker"
+                android:ems="10"
+                android:inputType="textCapSentences"
+                android:paddingLeft="12dp"
+
+
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:textColorHint="@color/blue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintStart_toStartOf="@+id/textView18"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:paddingLeft="6.10dp"
+                android:paddingTop="10dp"
+
+                android:text="Field"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_field_spinner"
+                app:layout_constraintStart_toStartOf="@+id/create_course_field_spinner"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_instructor" />
+
+            <Spinner
+                android:id="@+id/create_course_field_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/white_darker"
+                android:isScrollContainer="true"
+                android:prompt="@string/choose_field"
+                 app:layout_constraintBottom_toTopOf="@+id/textView21"
+                app:layout_constraintStart_toStartOf="@+id/textView21"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:paddingLeft="6.10dp"
+                android:paddingTop="10dp"
+
+                android:text="Sub Field"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_subfield_spinner"
+                app:layout_constraintStart_toStartOf="@+id/create_course_subfield_spinner"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_field_spinner" />
+
+            <Spinner
+                android:id="@+id/create_course_subfield_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/white_darker"
+
+                android:dropDownSelector="@drawable/down_arrow"
+                android:isScrollContainer="true"
+                android:prompt="@string/choose_sub_field"
+                app:layout_constraintBottom_toTopOf="@+id/create_course_btn"
+                app:layout_constraintStart_toStartOf="@+id/create_course_btn"
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+            <Button
+                android:id="@+id/create_course_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded_view"
+                android:backgroundTint="@color/blue"
+                android:text="Create"
+                android:textColor="@color/white_darker"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/create_course_subfield_spinner"
+                tools:layout_editor_absoluteX="18dp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/down_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/create_course_subfield_spinner"
+                app:layout_constraintEnd_toEndOf="@+id/create_course_subfield_spinner"
+                app:layout_constraintLeft_toLeftOf="@id/create_course_subfield_spinner"
+                app:layout_constraintTop_toTopOf="@+id/create_course_subfield_spinner" />
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="9dp"
+                android:src="@drawable/down_arrow"
+                 app:layout_constraintBottom_toBottomOf="@+id/create_course_field_spinner"
+                app:layout_constraintEnd_toEndOf="@+id/create_course_field_spinner"
+                app:layout_constraintLeft_toLeftOf="@id/create_course_field_spinner"
+                app:layout_constraintTop_toTopOf="@+id/create_course_field_spinner" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EGP"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/create_course_price"
+                app:layout_constraintEnd_toEndOf="@+id/create_course_price"
+                app:layout_constraintHorizontal_bias="0.33"
+                app:layout_constraintStart_toStartOf="@+id/create_course_price"
+                app:layout_constraintTop_toTopOf="@+id/create_course_price" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

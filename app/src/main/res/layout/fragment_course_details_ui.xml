@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.courseDetailsUI"
+      >
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@color/white_darker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/factory_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/course_details_back"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="25dp"
+        android:src="@drawable/back_toolbar"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="65dp"
+        android:layout_height="59dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/details_course_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blue"
+         android:backgroundTint="@color/blue"
+        android:text="5000 EGP"
+        android:inputType="textNoSuggestions"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/course_details_back"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/details_course_rode_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="95%"
+        android:textColor="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/details_course_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="@+id/details_course_price"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <ImageView
+        android:id="@+id/details_course_star"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/rate_star"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/course_details_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.89" />
+
+    <TextView
+        android:id="@+id/details_course_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:textColor="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:text="5"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/details_course_star"
+        app:layout_constraintEnd_toStartOf="@+id/details_course_star"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/details_course_star" />
+
+    <TextView
+        android:id="@+id/details_course_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:textColor="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:text="Russian course"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintStart_toStartOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <TextView
+        android:id="@+id/details_course_location"
+        android:textColor="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="doki st.4"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/details_course_place"
+        app:layout_constraintStart_toStartOf="@+id/details_course_place"
+        app:layout_constraintTop_toBottomOf="@+id/details_course_place"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/details_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:text="Big Data Course"
+        android:textColor="@color/yellow"
+        android:textSize="23sp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_course_location"
+        app:layout_constraintVertical_bias="0.00999999" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/course_description"
+        android:inputType="textNoSuggestions"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/blue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/details_course_name"
+        app:layout_constraintTop_toBottomOf="@+id/details_course_name"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <TextView
+        android:id="@+id/course_details_description"
+        android:orientation="vertical"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="15dp"
+
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:scrollbars="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:text="TextView"
+
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:text="@string/instructor"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
+
+    <TextView
+        android:id="@+id/details_course_instructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:backgroundTint="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:textColor="@color/blue"
+
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/details_course_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="@string/enrol"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.96" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="@string/date"
+        android:textColor="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:textSize="16sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/details_course_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/details_course_instructor"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/details_course_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See Reviews"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/details_course_pay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/details_course_pay"
+        app:layout_constraintTop_toTopOf="@+id/details_course_pay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.typeMailUI">
+
+    <FrameLayout
+        android:id="@+id/type_mail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/yellow"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/type_mail_title"
+            android:layout_width="wrap_content"
+            android:inputType="textCapSentences"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="45dp"
+            android:text="Forget Password"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/type_mail_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:text="Type Your Email"
+        android:inputType="textCapSentences"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_mail_toolbar"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <EditText
+        android:id="@+id/type_mail_mail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+         android:layout_marginRight="25dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/white_darker"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="12dp"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/type_mail_textview"
+        app:layout_constraintTop_toBottomOf="@+id/type_mail_textview"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <Button
+        android:id="@+id/type_mail_btn"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="Send Code"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type_mail_mail"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/type_mail_back_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/type_mail_btn"
+        app:layout_constraintStart_toStartOf="@+id/type_mail_btn"
+        app:layout_constraintTop_toBottomOf="@+id/type_mail_btn"
+        app:layout_constraintVertical_bias="0.06" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

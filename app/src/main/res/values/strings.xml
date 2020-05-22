@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Roadget</string>
+    <string name="login">Login</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+
+    <string name="foregetpass">Forgot password!</string>
+    <string name="notregistered">Not registered yet!</string>
+    <string name="mobileno">Mobile number</string>
+    <string name="email">Email</string>
+    <string name="date">Date :</string>
+
+    <string name="address">Address</string>
+    <string name="regester">Registration</string>
+    <string name="fullname">Full name</string>
+    <string-array name="user_type_menu">
+        <item>User Type</item>
+
+        <item>User</item>
+        <item>Admin</item>
+    </string-array>
+    <string name="gender">Gender</string>
+    <string name="alreadhave">Already have an account!</string>
+    <string name="courses">Courses</string>
+    <string name="roadmap">Roadmap</string>
+    <string name="carerr">Careers</string>
+
+    <string name="payment">Payment</string>
+    <string name="profile">Profile</string>
+
+    <string name="material">Material</string>
+    <string name="assignmet">Assignment</string>
+    <string name="survey">Survey</string>
+    <string name="notes">Notes</string>
+
+     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="signup">Sign Up</string>
+    <string name="course_description">Course Description :</string>
+    <string name="pay">pay</string>
+    <string name="instructor">Instructor :</string>
+    <string name="enrol">enrol</string>
+    <string name="admin">Admin</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="my_courses">My Courses</string>
+    <string name="add_a_new_course">Add a new course</string>
+    <string name="requests">Requests</string>
+    <string name="choose_sub_field">Choose Sub Field</string>
+    <string name="choose_field">Choose Field</string>
+
+
+    <string name="verify_your_account">Verify Your Account</string>
+    <string name="requests_for">Requests For</string>
+    <string name="highest_roadmap_rate">Highest Roadmap Rate</string>
+    <string name="highest_feedback_rate">Highest Feedback Rate</string>
+    <string name="price_low_to_high">Price: Low to High</string>
+</resources>

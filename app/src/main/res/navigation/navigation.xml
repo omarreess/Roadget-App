@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/logoUI">
+
+    <fragment
+        android:id="@+id/logoUI"
+        android:name="com.example.rode.UI.logoUI"
+        android:label="fragment_logo_ui"
+        tools:layout="@layout/fragment_logo_ui" >
+        <action
+            android:id="@+id/action_logoUI_to_loginUI"
+            app:popUpTo="@id/logoUI"
+            app:popUpToInclusive="true"
+
+            app:destination="@id/loginUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginUI"
+        android:name="com.example.rode.UI.loginUI"
+        android:label="fragment_login_ui"
+        tools:layout="@layout/fragment_login_ui" >
+        <action
+            android:id="@+id/action_loginUI_to_signupUI"
+            app:destination="@id/signupUI" />
+        <action
+            android:id="@+id/action_loginUI_to_fieldsUI"
+            app:popUpTo="@id/loginUI"
+            app:popUpToInclusive="true"
+            app:destination="@id/fieldsUI"
+
+            />
+        <action
+            android:id="@+id/action_loginUI_to_typeMailUI"
+            app:destination="@id/typeMailUI" />
+        <action
+            android:id="@+id/action_loginUI_to_profileAdminUI"
+            app:destination="@id/profileAdminUI"
+            app:popUpTo="@id/loginUI"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/verifyUI"
+        android:name="com.example.rode.UI.verifyUI"
+        android:label="fragment_verify_ui"
+        tools:layout="@layout/fragment_verify_ui" >
+        <action
+            android:id="@+id/action_verifyUI_to_changepassUI"
+            app:destination="@id/changepassUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/changepassUI"
+        android:name="com.example.rode.UI.changepassUI"
+        android:label="fragment_changepass_ui"
+        tools:layout="@layout/fragment_changepass_ui" >
+        <action
+            android:id="@+id/action_changepassUI_to_fieldsUI"
+            app:destination="@id/fieldsUI"
+            app:popUpTo="@id/changepassUI"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_changepassUI_to_profileAdminUI"
+            app:destination="@id/profileAdminUI"
+            app:popUpTo="@id/changepassUI"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signupUI"
+        android:name="com.example.rode.UI.signupUI"
+        android:label="fragment_signup_ui"
+        tools:layout="@layout/fragment_signup_ui" >
+        <action
+            android:id="@+id/action_signupUI_to_fieldsUI"
+            app:destination="@id/fieldsUI"
+            app:popUpTo="@id/signupUI"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_signupUI_to_profileAdminUI"
+            app:destination="@id/profileAdminUI"
+            app:popUpTo="@id/signupUI"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_signupUI_to_loginUI"
+            app:destination="@id/loginUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/fieldsUI"
+        android:name="com.example.rode.UI.fieldsUI"
+        android:label="fragment_fields_ui"
+        tools:layout="@layout/fragment_fields_ui" >
+        <action
+            android:id="@+id/action_fieldsUI_to_profileAdminUI"
+            app:destination="@id/profileAdminUI" />
+        <action
+            android:id="@+id/action_fieldsUI_to_profileUserUI"
+            app:destination="@id/profileUserUI" />
+        <action
+            android:id="@+id/action_fieldsUI_to_subField"
+            app:destination="@id/subField" />
+    </fragment>
+    <fragment
+        android:id="@+id/roadmapUI"
+        android:name="com.example.rode.UI.roadmapUI"
+        android:label="fragment_roadmap_ui"
+        tools:layout="@layout/fragment_roadmap_ui" >
+        <action
+            android:id="@+id/action_roadmapUI_to_coursesUI"
+            app:destination="@id/coursesUI" />
+        <action
+            android:id="@+id/action_roadmapUI_to_profileAdminUI"
+            app:destination="@id/profileAdminUI" />
+        <action
+            android:id="@+id/action_roadmapUI_to_profileUserUI"
+            app:destination="@id/profileUserUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/coursesUI"
+        android:name="com.example.rode.UI.coursesUI"
+        android:label="fragment_courses_ui"
+        tools:layout="@layout/fragment_courses_ui" >
+        <action
+            android:id="@+id/action_coursesUI_to_courseDetailsUI"
+            app:destination="@id/courseDetailsUI" />
+        <action
+            android:id="@+id/action_coursesUI_to_profileUserUI"
+            app:destination="@id/profileUserUI" />
+        <action
+            android:id="@+id/action_coursesUI_to_profileAdminUI"
+            app:destination="@id/profileAdminUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseDetailsUI"
+        android:name="com.example.rode.UI.courseDetailsUI"
+        android:label="fragment_course_details_ui"
+        tools:layout="@layout/fragment_course_details_ui" >
+        <action
+            android:id="@+id/action_courseDetailsUI_to_courseFeedbacksUI"
+            app:destination="@id/courseFeedbacksUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileUserUI"
+        android:name="com.example.rode.UI.profileUserUI"
+        android:label="fragment_profile_user_ui"
+        tools:layout="@layout/fragment_profile_user_ui" >
+        <action
+            android:id="@+id/action_profileUserUI_to_mycourseUserUI"
+            app:destination="@id/mycourseUserUI" />
+        <action
+            android:id="@+id/action_profileUserUI_to_loginUI"
+            app:destination="@id/loginUI"
+            app:popUpTo="@id/profileUserUI"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profileAdminUI"
+        android:name="com.example.rode.UI.profileAdminUI"
+        android:label="fragment_profile_admin_ui"
+        tools:layout="@layout/fragment_profile_admin_ui" >
+        <action
+            android:id="@+id/action_profileAdminUI_to_mycoursesAdminUI"
+            app:destination="@id/mycoursesAdminUI" />
+        <action
+            android:id="@+id/action_profileAdminUI_to_loginUI"
+            app:popUpTo="@id/profileAdminUI"
+            app:popUpToInclusive="true"
+            app:destination="@id/loginUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestsUI"
+        android:name="com.example.rode.UI.requestsUI"
+        android:label="fragment_requests_ui"
+        tools:layout="@layout/fragment_requests_ui" />
+    <fragment
+        android:id="@+id/createCourseUI"
+        android:name="com.example.rode.UI.createCourseUI"
+        android:label="fragment_create_course_ui"
+        tools:layout="@layout/fragment_create_course_ui" >
+        <action
+            app:popUpTo="@id/createCourseUI"
+            app:popUpToInclusive="true"
+            android:id="@+id/action_createCourseUI_to_profileAdminUI"
+            app:destination="@id/profileAdminUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/mycoursesAdminUI"
+        android:name="com.example.rode.UI.mycoursesAdminUI"
+        android:label="fragment_mycourses_admin_ui"
+        tools:layout="@layout/fragment_mycourses_admin_ui" >
+        <action
+            android:id="@+id/action_mycoursesAdminUI_to_createCourseUI"
+            app:destination="@id/createCourseUI"
+            app:popUpTo="@id/mycoursesAdminUI"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_mycoursesAdminUI_to_materialAdminUI"
+            app:destination="@id/materialAdminUI"
+            app:popUpTo="@id/mycoursesAdminUI"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_mycoursesAdminUI_to_notesAdminUI"
+            app:destination="@id/notesAdminUI"
+            app:popUpTo="@id/mycoursesAdminUI"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_mycoursesAdminUI_to_requestsUI"
+            app:destination="@id/requestsUI"
+            app:popUpTo="@id/mycoursesAdminUI"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/materialAdminUI"
+        android:name="com.example.rode.UI.MaterialAdminUI"
+        android:label="fragment_material_admin_ui"
+        tools:layout="@layout/fragment_material_admin_ui" />
+    <fragment
+        android:id="@+id/notesAdminUI"
+        android:name="com.example.rode.UI.notesAdminUI"
+        android:label="fragment_notes_admin_ui"
+        tools:layout="@layout/fragment_notes_admin_ui" />
+    <fragment
+        android:id="@+id/mycourseUserUI"
+        android:name="com.example.rode.UI.mycourseUserUI"
+        android:label="fragment_mycourse_user_ui"
+        tools:layout="@layout/fragment_mycourse_user_ui" >
+        <action
+            android:id="@+id/action_mycourseUserUI_to_materialUserUI"
+            app:destination="@id/materialUserUI"
+            app:popUpTo="@id/mycourseUserUI"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_mycourseUserUI_to_notesUserUI"
+            app:destination="@id/notesUserUI"
+            app:popUpTo="@id/mycourseUserUI"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_mycourseUserUI_to_postFeedBackUI"
+            app:destination="@id/postFeedBackUI"
+            app:popUpTo="@id/mycourseUserUI"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/materialUserUI"
+        android:name="com.example.rode.UI.materialUserUI"
+        android:label="fragment_material_user_ui"
+        tools:layout="@layout/fragment_material_user_ui" />
+    <fragment
+        android:id="@+id/notesUserUI"
+        android:name="com.example.rode.UI.notesUserUI"
+        android:label="fragment_notes_user_ui"
+        tools:layout="@layout/fragment_notes_user_ui" />
+    <fragment
+        android:id="@+id/subField"
+        android:name="com.example.rode.UI.SubField"
+        android:label="fragment_sub_field"
+        tools:layout="@layout/fragment_sub_field" >
+        <action
+            android:id="@+id/action_subField_to_roadmapUI"
+            app:destination="@id/roadmapUI" />
+        <action
+            android:id="@+id/action_subField_to_profileUserUI"
+            app:destination="@id/profileUserUI" />
+        <action
+            android:id="@+id/action_subField_to_profileAdminUI"
+            app:destination="@id/profileAdminUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/typeMailUI"
+        android:name="com.example.rode.UI.typeMailUI"
+        android:label="fragment_type_mail_u_i"
+        tools:layout="@layout/fragment_type_mail_u_i" >
+        <action
+            android:id="@+id/action_typeMailUI_to_verifyUI"
+            app:destination="@id/verifyUI" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFeedBackUI"
+        android:name="com.example.rode.UI.PostFeedBackUI"
+        android:label="fragment_post_feedback_ui"
+        tools:layout="@layout/fragment_post_feedback_ui" />
+    <fragment
+        android:id="@+id/courseFeedbacksUI"
+        android:name="com.example.rode.UI.CourseFeedbacksUI"
+        android:label="fragment_course_feedbacks_ui"
+        tools:layout="@layout/fragment_course_feedbacks_ui" />
+</navigation>

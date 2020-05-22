@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="18dp"
+    android:background="@drawable/rounded_view"
+    android:backgroundTint="@color/white_darker">
+
+
+    <TextView
+        android:id="@+id/course_list_place"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:backgroundTint="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:text="Russian courses"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/course_list_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:inputType="textNoSuggestions"
+        android:text="4 Doki st.6"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/course_list_place"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/course_list_place"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44" />
+
+    <TextView
+        android:id="@+id/course_list_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/blue"
+        android:text="9000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/course_list_location" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="22dp"
+        app:layout_constraintBottom_toBottomOf="@+id/course_list_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toEndOf="@+id/course_list_price"
+        app:layout_constraintTop_toTopOf="@+id/course_list_price"
+        app:srcCompat="@drawable/rate_star" />
+
+    <TextView
+        android:id="@+id/course_list_rate_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="5"
+        android:textSize="18sp"
+        android:inputType="textNoSuggestions"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/course_list_price"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/course_list_rate_roadmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textNoSuggestions"
+        android:backgroundTint="@color/blue"
+        android:text="95%"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/course_list_rate_course"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.59000003" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

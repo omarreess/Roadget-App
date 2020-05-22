@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginTop="13dp"
+    android:background="@drawable/rounded_view"
+    android:backgroundTint="@color/white_darker">
+
+    <TextView
+        android:id="@+id/item_request_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ramy sakr"
+        android:inputType="textCapSentences"
+        android:textColor="@color/yellow"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001" />
+
+
+    <TextView
+        android:id="@+id/item_request_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:text="Course"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_request_accept"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/item_request_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <ImageView
+        android:id="@+id/item_request_accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/ic_done_24px" />
+
+    <ImageView
+        android:id="@+id/item_request_reject"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_request_accept"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@+id/item_request_accept"
+        app:layout_constraintTop_toTopOf="@+id/item_request_accept"
+        app:srcCompat="@drawable/reject" />
+
+    <TextView
+        android:id="@+id/item_request_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:inputType="textCapSentences"
+        android:textColor="@color/blue"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/item_request_accept"
+        app:layout_constraintEnd_toEndOf="@+id/item_request_reject"
+        app:layout_constraintStart_toStartOf="@+id/item_request_accept"
+        app:layout_constraintTop_toTopOf="@+id/item_request_accept" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+
+   >
+
+
+    <EditText
+        android:id="@+id/type_note_edittext"
+        android:layout_width="280dp"
+        android:layout_weight="3"
+          android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:hint="Type Here" />
+
+    <Button
+        android:id="@+id/type_note_btn"
+        android:layout_width="90dp"
+        android:layout_weight="2"
+        android:layout_marginTop="10dp"
+         android:layout_marginLeft="20dp"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/yellow"
+        android:background="@drawable/rounded_view"
+        android:text="Add" />
+</LinearLayout>

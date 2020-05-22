@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginTop="13dp"
+    android:background="@drawable/rounded_view"
+    android:backgroundTint="@color/white_darker">
+
+    <TextView
+        android:id="@+id/item_request_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Big Data"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="textCapSentences"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <TextView
+        android:id="@+id/iteam_mycourse_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="code caqiue"
+        android:inputType="textCapSentences"
+        android:textColor="@color/blue"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/item_request_name"
+        app:layout_constraintTop_toBottomOf="@+id/item_request_name"
+        app:layout_constraintVertical_bias="0.06999999" />
+
+    <TextView
+        android:id="@+id/item_request_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Price :"
+        android:inputType="textCapSentences"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iteam_mycourse_place"
+        app:layout_constraintTop_toBottomOf="@+id/iteam_mycourse_place"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <TextView
+        android:id="@+id/item_status_textview"
+        android:inputType="textCapSentences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="88dp"
+        android:text="Status : "
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/item_request_course"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/item_request_course"
+        app:layout_constraintTop_toTopOf="@+id/item_request_course"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <TextView
+        android:id="@+id/iteam_mycourse_status"
+        android:inputType="textCapSentences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14sp"
+        android:text="Accepted"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@+id/item_status_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@+id/item_status_textview"
+        app:layout_constraintTop_toTopOf="@+id/item_status_textview" />
+
+    <TextView
+        android:id="@+id/iteam_mycourse_date"
+        android:layout_width="wrap_content"
+        android:inputType="textCapSentences"
+        android:layout_height="wrap_content"
+        android:text="20 jan 2020"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/iteam_mycourse_place"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0
+"
+        app:layout_constraintStart_toStartOf="@+id/item_status_textview"
+        app:layout_constraintTop_toTopOf="@+id/item_request_name"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/item_mycourse_price"
+        android:inputType="textCapSentences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3000 EGP"
+        android:textColor="@color/blue"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_request_course"
+        app:layout_constraintEnd_toStartOf="@+id/item_status_textview"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toEndOf="@+id/item_request_course"
+        app:layout_constraintTop_toTopOf="@+id/item_request_course" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

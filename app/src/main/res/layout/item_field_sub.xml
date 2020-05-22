@@ -1,0 +1,22 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+     android:background="@drawable/rounded_view"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:backgroundTint="@color/blue"
+android:layout_marginTop="15dp"
+    >
+
+
+    <TextView
+        android:id="@+id/text_item_field_sub"
+        android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:text="TextView"
+        android:textColor="#ffff"
+        android:textSize="17sp"
+        android:textStyle="normal" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.profileUserUI">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profile_user_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <ImageView
+                android:id="@+id/profile_user_back"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/back_toolbar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.192" />
+
+
+            <TextView
+                android:id="@+id/profile_user_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3.6sp"
+                android:paddingBottom="7dp"
+                android:text="@string/profile"
+                android:textColor="@color/white"
+                android:inputType="textCapSentences"
+
+                android:textColorHighlight="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.507" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_user_img"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:src="@drawable/factory_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_toolbar"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/profile_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:text="Omar Essam"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/profile_user_img"
+        app:layout_constraintTop_toTopOf="@+id/profile_user_img" />
+
+    <TextView
+        android:id="@+id/profile_user_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="oessam68@gmail.com"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_user_logout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_user_name"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_name"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <Button
+        android:id="@+id/profile_user_mycourse"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="My Courses"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_user_notes"
+        app:layout_constraintStart_toStartOf="@+id/profile_user_matriel"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_mail"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <TextView
+        android:id="@+id/profile_user_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        android:textColor="@color/blue"
+        android:textSize="22sp"
+         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profile_user_img"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_toolbar"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <Button
+        android:id="@+id/profile_user_matriel"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="@string/material"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_user_notes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_user_dash"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/profile_user_notes"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="@string/notes"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_admin_matriel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_user_matriel"
+        app:layout_constraintTop_toTopOf="@+id/profile_user_matriel" />
+
+    <Button
+        android:id="@+id/profile_user_logout"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/white_darker"
+        android:text="Logout"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_user_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintStart_toEndOf="@+id/profile_user_name"
+        app:layout_constraintTop_toTopOf="@+id/profile_user_name" />
+
+     
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.roadmapUI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/roadmap_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <ImageView
+                android:id="@+id/roadmap_back"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="17dp"
+                android:paddingTop="8dp"
+
+                android:src="@drawable/back_toolbar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.192" />
+
+            <ImageView
+                android:id="@+id/roadmap_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="16dp"
+
+                android:src="@drawable/login_prof"
+                app:layout_constraintBottom_toBottomOf="@+id/roadmap_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/roadmap_title"
+                app:layout_constraintVertical_bias="0.192" />
+
+            <TextView
+                android:id="@+id/roadmap_title"
+                android:inputType="textCapSentences"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3.6sp"
+                android:text="@string/roadmap"
+
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintVertical_bias="0.52"
+                android:textColor="@color/white"
+                android:textColorHighlight="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/roadmap_back"
+                app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/roadmap_back"
+                  />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/road_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="1dp"
+        android:inputType="textCapSentences"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roadmap_toolbar"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/road_list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="31dp"
+        android:paddingBottom="30dp"
+        android:paddingRight="30dp"
+
+        android:scrollbars= "vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/road_title" />
+
+
+
+    <!--        app:layout_anchor="@id/lvToDoList"-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/road_next_show_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="20dp"
+android:tint="@color/blue"
+        android:backgroundTint="@color/yellow"
+        android:src="@drawable/show_course_next"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/road_title"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:src="@drawable/factory_back"
+        app:layout_constraintBottom_toBottomOf="@+id/road_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/road_list"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_end="578dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.profileAdminUI">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profile_admin_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:background="@color/yellow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="16dp">
+
+            <ImageView
+                android:id="@+id/profile_admin_back"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="8dp"
+                android:src="@drawable/back_toolbar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.192" />
+
+
+            <TextView
+                android:id="@+id/profile_admin_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3.6sp"
+                android:paddingBottom="7dp"
+                android:text="@string/admin"
+                android:inputType="textCapSentences"
+                android:textColor="@color/white"
+
+                android:textColorHighlight="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.48"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.507" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_admin_img"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:src="@drawable/factory_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_admin_toolbar"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/profile_admin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Omar Essam"
+        android:textColor="@color/blue"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/profile_admin_img"
+        app:layout_constraintTop_toTopOf="@+id/profile_admin_img" />
+
+    <TextView
+        android:id="@+id/profile_admin_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapSentences"
+        android:text="oessam68@gmail.com"
+        android:textColor="@color/blue"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_admin_logout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/profile_admin_name"
+        app:layout_constraintTop_toBottomOf="@+id/profile_admin_name"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <Button
+        android:id="@+id/profile_admin_mycourse"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="@string/courses"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_admin_requests"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/profile_admin_requests"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/profile_admin_requests"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="@string/requests"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_admin_mycourse"
+        app:layout_constraintTop_toBottomOf="@+id/profile_admin_toolbar"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/profile_admin_dash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dashboard"
+        android:textColor="@color/blue"
+
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profile_admin_img"
+        app:layout_constraintTop_toBottomOf="@+id/profile_admin_toolbar"
+        app:layout_constraintVertical_bias="0.48" />
+
+    <Button
+        android:id="@+id/profile_admin_matriel"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="@string/material"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/profile_admin_notes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_admin_dash"
+        app:layout_constraintVertical_bias="0.23000002" />
+
+    <Button
+        android:id="@+id/profile_admin_notes"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/blue"
+        android:text="@string/notes"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_admin_matriel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/profile_admin_matriel"
+        app:layout_constraintTop_toTopOf="@+id/profile_admin_matriel" />
+
+    <Button
+        android:id="@+id/profile_admin_logout"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_view"
+        android:backgroundTint="@color/white_darker"
+        android:text="Logout"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_admin_mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/profile_admin_name"
+        app:layout_constraintTop_toTopOf="@+id/profile_admin_name"
+        tools:textStyle="normal" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
