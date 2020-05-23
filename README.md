@@ -45,6 +45,23 @@ App Features :
     <img src="https://github.com/omarreess/RoadgetApp/blob/master/Roadget%20Ui/Requests.png" width="300" />
    
 </p>
+
+Code Features :
+ - Navigation graph for fragments and app contains only one activity
+ - Applied The single-responsibility principle  of OOD
+ - Tried to make it  clean and readable code 
+ - The Code orginized by classifying it  into  3 packages :  Network layer , UI , Logic and  Data 
+ - Network layer contains Authencticon and Request of Bringing data from Firebase Real-time Database
+ - Logic package contaings Adapters for data  , Data Package contains models and some static data
+ - Sort Button have three sorting Simple algorthims 
+ - Drawables used with difreent densities to fit with more screens
+ - 80% of Drawables are SVG to minimize app size
+ - User Signin and Signup using Firebase Authentication 
+ - Binding views using butterknife
+ - Most of Layouts made with constraint layout and guidelines
+ - Icons  from matriel.io
+ 
+ 
  
 Whole App UI (Sequence of App) :
 
