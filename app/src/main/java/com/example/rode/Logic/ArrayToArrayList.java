@@ -14,6 +14,7 @@ public class ArrayToArrayList {
         ArrayList<String> arrayListCap = new ArrayList<>();
         for (int i =0 ; i < arrayList.size() ; i++)
         {
+            //returning data with first letter capital
             arrayListCap.add(arrayList.get(i).substring(0, 1).toUpperCase() + arrayList.get(i).substring(1).toLowerCase());
         }
 
