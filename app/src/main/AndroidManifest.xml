@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.rode"
+    package="com.omaressam.rode"
      >
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme"
 
           >
-        <activity android:name=".MainActivity"
+        <activity android:name="com.omaressam.rode.MainActivity"
             android:screenOrientation = "locked"
             android:windowSoftInputMode="adjustPan"
 

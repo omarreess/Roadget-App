@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/logoUI"
-        android:name="com.example.rode.UI.logoUI"
+        android:name="com.omaressam.rode.UI.logoUI"
         android:label="fragment_logo_ui"
         tools:layout="@layout/fragment_logo_ui" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginUI"
-        android:name="com.example.rode.UI.loginUI"
+        android:name="com.omaressam.rode.UI.loginUI"
         android:label="fragment_login_ui"
         tools:layout="@layout/fragment_login_ui" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/verifyUI"
-        android:name="com.example.rode.UI.verifyUI"
+        android:name="com.omaressam.rode.UI.verifyUI"
         android:label="fragment_verify_ui"
         tools:layout="@layout/fragment_verify_ui" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/changepassUI"
-        android:name="com.example.rode.UI.changepassUI"
+        android:name="com.omaressam.rode.UI.changepassUI"
         android:label="fragment_changepass_ui"
         tools:layout="@layout/fragment_changepass_ui" >
         <action
@@ -68,7 +68,7 @@
     </fragment>
     <fragment
         android:id="@+id/signupUI"
-        android:name="com.example.rode.UI.signupUI"
+        android:name="com.omaressam.rode.UI.signupUI"
         android:label="fragment_signup_ui"
         tools:layout="@layout/fragment_signup_ui" >
         <action
@@ -87,7 +87,7 @@
     </fragment>
     <fragment
         android:id="@+id/fieldsUI"
-        android:name="com.example.rode.UI.fieldsUI"
+        android:name="com.omaressam.rode.UI.fieldsUI"
         android:label="fragment_fields_ui"
         tools:layout="@layout/fragment_fields_ui" >
         <action
@@ -102,7 +102,7 @@
     </fragment>
     <fragment
         android:id="@+id/roadmapUI"
-        android:name="com.example.rode.UI.roadmapUI"
+        android:name="com.omaressam.rode.UI.roadmapUI"
         android:label="fragment_roadmap_ui"
         tools:layout="@layout/fragment_roadmap_ui" >
         <action
@@ -117,7 +117,7 @@
     </fragment>
     <fragment
         android:id="@+id/coursesUI"
-        android:name="com.example.rode.UI.coursesUI"
+        android:name="com.omaressam.rode.UI.coursesUI"
         android:label="fragment_courses_ui"
         tools:layout="@layout/fragment_courses_ui" >
         <action
@@ -132,7 +132,7 @@
     </fragment>
     <fragment
         android:id="@+id/courseDetailsUI"
-        android:name="com.example.rode.UI.courseDetailsUI"
+        android:name="com.omaressam.rode.UI.courseDetailsUI"
         android:label="fragment_course_details_ui"
         tools:layout="@layout/fragment_course_details_ui" >
         <action
@@ -141,7 +141,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileUserUI"
-        android:name="com.example.rode.UI.profileUserUI"
+        android:name="com.omaressam.rode.UI.profileUserUI"
         android:label="fragment_profile_user_ui"
         tools:layout="@layout/fragment_profile_user_ui" >
         <action
@@ -155,7 +155,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileAdminUI"
-        android:name="com.example.rode.UI.profileAdminUI"
+        android:name="com.omaressam.rode.UI.profileAdminUI"
         android:label="fragment_profile_admin_ui"
         tools:layout="@layout/fragment_profile_admin_ui" >
         <action
@@ -169,12 +169,12 @@
     </fragment>
     <fragment
         android:id="@+id/requestsUI"
-        android:name="com.example.rode.UI.requestsUI"
+        android:name="com.omaressam.rode.UI.requestsUI"
         android:label="fragment_requests_ui"
         tools:layout="@layout/fragment_requests_ui" />
     <fragment
         android:id="@+id/createCourseUI"
-        android:name="com.example.rode.UI.createCourseUI"
+        android:name="com.omaressam.rode.UI.createCourseUI"
         android:label="fragment_create_course_ui"
         tools:layout="@layout/fragment_create_course_ui" >
         <action
@@ -185,7 +185,7 @@
     </fragment>
     <fragment
         android:id="@+id/mycoursesAdminUI"
-        android:name="com.example.rode.UI.mycoursesAdminUI"
+        android:name="com.omaressam.rode.UI.mycoursesAdminUI"
         android:label="fragment_mycourses_admin_ui"
         tools:layout="@layout/fragment_mycourses_admin_ui" >
         <action
@@ -211,17 +211,17 @@
     </fragment>
     <fragment
         android:id="@+id/materialAdminUI"
-        android:name="com.example.rode.UI.MaterialAdminUI"
+        android:name="com.omaressam.rode.UI.MaterialAdminUI"
         android:label="fragment_material_admin_ui"
         tools:layout="@layout/fragment_material_admin_ui" />
     <fragment
         android:id="@+id/notesAdminUI"
-        android:name="com.example.rode.UI.notesAdminUI"
+        android:name="com.omaressam.rode.UI.notesAdminUI"
         android:label="fragment_notes_admin_ui"
         tools:layout="@layout/fragment_notes_admin_ui" />
     <fragment
         android:id="@+id/mycourseUserUI"
-        android:name="com.example.rode.UI.mycourseUserUI"
+        android:name="com.omaressam.rode.UI.mycourseUserUI"
         android:label="fragment_mycourse_user_ui"
         tools:layout="@layout/fragment_mycourse_user_ui" >
         <action
@@ -242,17 +242,17 @@
     </fragment>
     <fragment
         android:id="@+id/materialUserUI"
-        android:name="com.example.rode.UI.materialUserUI"
+        android:name="com.omaressam.rode.UI.materialUserUI"
         android:label="fragment_material_user_ui"
         tools:layout="@layout/fragment_material_user_ui" />
     <fragment
         android:id="@+id/notesUserUI"
-        android:name="com.example.rode.UI.notesUserUI"
+        android:name="com.omaressam.rode.UI.notesUserUI"
         android:label="fragment_notes_user_ui"
         tools:layout="@layout/fragment_notes_user_ui" />
     <fragment
         android:id="@+id/subField"
-        android:name="com.example.rode.UI.SubField"
+        android:name="com.omaressam.rode.UI.SubField"
         android:label="fragment_sub_field"
         tools:layout="@layout/fragment_sub_field" >
         <action
@@ -267,7 +267,7 @@
     </fragment>
     <fragment
         android:id="@+id/typeMailUI"
-        android:name="com.example.rode.UI.typeMailUI"
+        android:name="com.omaressam.rode.UI.typeMailUI"
         android:label="fragment_type_mail_u_i"
         tools:layout="@layout/fragment_type_mail_u_i" >
         <action
@@ -276,12 +276,12 @@
     </fragment>
     <fragment
         android:id="@+id/postFeedBackUI"
-        android:name="com.example.rode.UI.PostFeedBackUI"
+        android:name="com.omaressam.rode.UI.PostFeedBackUI"
         android:label="fragment_post_feedback_ui"
         tools:layout="@layout/fragment_post_feedback_ui" />
     <fragment
         android:id="@+id/courseFeedbacksUI"
-        android:name="com.example.rode.UI.CourseFeedbacksUI"
+        android:name="com.omaressam.rode.UI.CourseFeedbacksUI"
         android:label="fragment_course_feedbacks_ui"
         tools:layout="@layout/fragment_course_feedbacks_ui" />
 </navigation>
