@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:190690524062:android:be2d0136b84ebd1d2a748f",
         "android_client_info": {
-          "package_name": "com.example.rode"
+          "package_name": "com.omaressam.rode"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "190690524062-pao2v4clghfhkkm73s4n4b6pnj881kl8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.rode",
+            "package_name": "com.omaressam.rode",
             "certificate_hash": "d891e7d4e9baaa404167d015bfdd2a110317c4a5"
           }
         },
